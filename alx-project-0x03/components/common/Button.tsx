@@ -1,5 +1,6 @@
 // components/common/Button.tsx
-import type { ButtonProps } from "../../interface"; // relative to this file
+import { ButtonProps } from "../../interface";
+
 
 const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: ButtonProps) => {
   const backgroundColorClass = buttonBackgroundColor
