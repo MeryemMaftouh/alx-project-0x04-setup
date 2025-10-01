@@ -1,7 +1,7 @@
-import Layout from "../components/layouts/Layout";
-import "../styles/globals.css";
+import "@/styles/globals.css";
+import Layout from "@/components/layouts/Layout";
 import type { AppProps } from "next/app";
-import { CountProvider } from "../context/CountContext";
+import { CountProvider } from "@/context/CountContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -10,5 +10,5 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
     </CountProvider>
-  )
+  );
 }
